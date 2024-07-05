@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <!-- Calculadora Fatorial 😣 -->
+    <main class="container">
+      <h1 class="titulo-fatorial">Calculadora de fatorial</h1>
+      <div>
+        <input type="number" name="numberInsert" id="numberInsert" />
+        <label for="numberInsert"></label>
+        <button type="submit" id="buttonNumberInsert">Calcular</button>
+      </div>
+      <div class="resultFatorial">
+        <ol class="listFatorial" id="listFatorial"></ol>
+      </div>
+    </main>
+
+    <!-- Calculo de média ᕦ(ò_óˇ)ᕤ -->
+    <main class="container bg-2">
+      <h1 class="titulo-media">Calculo Média de notas</h1>
+      <div class="divMedia">
+        <input
+          type="number"
+          name="nota1"
+          id="nota1"
+          placeholder="Digite a nota 1"
+        />
+        <input
+          type="number"
+          name="nota2"
+          id="nota2"
+          placeholder="Digite a nota 2"
+        />
+        <input
+          type="number"
+          name="nota3"
+          id="nota3"
+          placeholder="Digite a nota 3"
+        />
+        <input
+          type="number"
+          name="nota4"
+          id="nota4"
+          placeholder="Digite a nota 4"
+        />
+        <input
+          type="number"
+          name="nota5"
+          id="nota5"
+          placeholder="Digite a nota 5"
+        />
+      </div>
+      <div id="resultMedia"></div>
+      <div>
+        <button onclick="calcularMedia()">Calcular</button>
+      </div>
+    </main>
+
+    <!-- Contagem de vogais (╬▔皿▔)╯ -->
+    <main class="container bg-3">
+        <h1 class="titulo-fatorial">Contagem de Vogais</h1>
+      <div>
+        <input
+          type="text"
+          name="contagemVogal"
+          id="contagemVogal"
+          placeholder="Coloque sua palavra ╰（‵□′）╯"
+        />
+      </div>
+      <div id="resultVogais"></div>
+      <div id="resultVogaisEncotradas"></div>
+      <div><button onclick="contarVogais()">Contar </button></div>
+    </main>
+    <!-- Conversão de Celsius para Fahrenheit ಠ﹏ಠ-->
+    <main class="container bg-2">
+        <h1 class="titulo-media">Conversão de Celsius para Fahrenheit</h1>
+        <div>
+            <input type="number" name="celsius" id="celsius">
+        </div>
+        <div id="resultCelsius">
+
+        </div>
+        <div>
+            <button onclick="converter()">Converter</button>
+        </div>
+    </main>
+    <script src="calcFatorial/js/script.js"></script>
+    <script src="calcMediaNotas/script.js"></script>
+    <script src="contagemVogais/script.js"></script>
+    <script src="conversãoTemp/script.js"></script>
+  </body>
+</html>
