@@ -54,6 +54,7 @@ button {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  gap: 1vh;
 }
 
 .titulo-fatorial {
@@ -97,7 +98,6 @@ button {
 .bg-2 {
   background-color: #ffffff;
   color: #000;
-  gap: 1vh;
 }
 
 .titulo-media {
