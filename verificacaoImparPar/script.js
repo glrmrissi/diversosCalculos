@@ -2,9 +2,10 @@ let inputParImpar = document.getElementById("imparPar");
 
 function verificarImpar(){
     let numero = Number(inputParImpar.value);
+    const result = document.getElementById("resultImpar")
     if(numero % 2 == 0){
-        alert("O número é Par");
+        result.innerText = "O número é par"
     } else {
-        alert("O número é Ímpar");
+        result.innerText = "O número é ímpar"
     }
 }
