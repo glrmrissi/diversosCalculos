@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="pokemons" id="pokemons">
+      <img id="pokemonsImg" src="imgs/png-clipart-pikachu-pixel-art-pixel-art-pokemon-bead-pokemon-thumbnail.png" alt="" srcset="">
+    </div>
 
     <!-- Calculadora Fatorial 😣 -->
     <main class="container">
@@ -111,11 +114,62 @@
         <button onclick="verificaAnoBissexto()">Verificar</button>
       </div>
     </main>
-    <script src="calcFatorial/js/script.js"></script>
-    <script src="calcMediaNotas/script.js"></script>
-    <script src="contagemVogais/script.js"></script>
-    <script src="conversãoTemp/script.js"></script>
-    <script src="verificacaoImparPar/script.js"></script>
-    <script src="anobissexto/script.js"></script>
+    <main class="container">
+      <h1 class="titulo-fatorial">Calculo de IMC</h1>
+      <div>
+        <label for="peso">Peso (kg):</label>
+        <input type="number" id="peso" name="peso">
+        <br>
+        <label for="altura">Altura (m):</label>
+        <input type="number" id="altura" name="altura" step="0.01" >
+        <br>
+      </div>
+      <div id="IMCResult"></div>
+      <div>
+        <button onclick="verificarIMC()">Calcular IMC</button>
+      </div>
+    </main>
+    <main class="container bg-2">
+      <h1 class="titulo-media">Inversão de string</h1>
+      <div>
+        <input type="text" name="invertString" id="invertString">
+      </div>
+      <div id="invertStringResult"></div>
+      <div>
+        <button onclick="invertirString()">Inverter</button>
+      </div>
+    </main>
+    <main class="container">
+      <h1 class="titulo-fatorial">Ordenação de array</h1>
+      <label for="arrayInput">Coloque os numeros separados por virgula:</label>
+      <div>
+        <input type="text" id="arrayInput" placeholder="">
+      </div>
+      <div id="sortedArrayResult"></div>
+      <div>
+        <button onclick="sortArray()">Sort</button>
+      </div>
+    </main>
+    <main class="container bg-2">
+      <h1 class="titulo-media">Verificador de numero primo</h1>
+      <div>
+        <input type="number" name="numberPrime" id="numberPrime">
+      </div>
+      <div id="primeResult"></div>
+      <div>
+        <button onclick="checkPrime()">É primo?</button>
+      </div>
+    </main>
+    <script type="text/javascript" src="assets/page/script.js"></script>
+    <script type="text/javascript" src="calcFatorial/js/script.js"></script>
+    <script type="text/javascript" src="calcMediaNotas/script.js"></script>
+    <script type="text/javascript" src="contagemVogais/script.js"></script>
+    <script type="text/javascript" src="conversãoTemp/script.js"></script>
+    <script type="text/javascript" src="verificacaoImparPar/script.js"></script>
+    <script type="text/javascript" src="anobissexto/script.js"></script>
+    <script type="text/javascript" src="calculoIMC/script.js"></script>
+    <script type="text/javascript" src="inversaoDeString/script.js"></script>
+    <script type="text/javascript" src="ordenacaoDeArray/script.js"></script>
+    <script type="text/javascript" src="verificacaoDeNumeroPrimo/script.js"></script>
   </body>
 </html>

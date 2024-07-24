@@ -66,6 +66,16 @@ button {
   cursor: pointer;
 }
 
+
+.pokemons {
+  position: fixed;
+  display: flex;
+  width:40px;
+  height: 40px;
+  right: 15px;
+  top: 10px;
+}
+
 .container {
   display: flex;
   flex-direction: column;
